@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Export-Import Agent Skills</title>
+  <style>
+    :root{font-family:system-ui,sans-serif;color:#e9eefb;background:#101a2e}body{margin:0}main{max-width:960px;margin:auto;padding:2rem 1.2rem 5rem}header{display:flex;justify-content:space-between;align-items:center;gap:1rem}button{border:1px solid #a6b5d0;border-radius:.5rem;padding:.65rem;background:transparent;color:inherit;cursor:pointer}h1{font-size:clamp(2.2rem,7vw,4.5rem);line-height:1.05;max-width:14ch}p{line-height:1.65;color:#c5d2e6}.tag{color:#66e3c4;font-weight:bold}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}.card,pre{background:#1c2b44;border:1px solid #364b6c;border-radius:1rem;padding:1.2rem}pre{white-space:pre-wrap;overflow-wrap:anywhere;color:#9df3dc}a{color:#9df3dc}small{color:#bac9de}
+  </style>
+</head>
+<body><main>
+  <header><strong>EXPORT / IMPORT</strong><button id="lang" type="button" aria-label="Change language">Bahasa Indonesia</button></header>
+  <p class="tag">OPEN AGENT SKILLS · LEARN BY DOING</p>
+  <h1 data-en="Learn global trade with an AI learning partner." data-id="Belajar perdagangan global bersama AI.">Learn global trade with an AI learning partner.</h1>
+  <p data-en="Three reusable skills help you explore trade, research responsibly, and build a portfolio." data-id="Tiga skill reusable membantu Anda memahami perdagangan, meneliti secara bertanggung jawab, dan menyusun portofolio.">Three reusable skills help you explore trade, research responsibly, and build a portfolio.</p>
+  <div class="grid">
+    <section class="card"><h2>01 · Orientation</h2><p data-en="Learn through stories and decisions." data-id="Belajar melalui cerita dan pilihan.">Learn through stories and decisions.</p></section>
+    <section class="card"><h2>02 · Research</h2><p data-en="Distinguish evidence from assumptions." data-id="Bedakan bukti dari asumsi.">Distinguish evidence from assumptions.</p></section>
+    <section class="card"><h2>03 · Portfolio</h2><p data-en="Improve your work using a rubric." data-id="Perbaiki karya menggunakan rubrik.">Improve your work using a rubric.</p></section>
+  </div>
+  <h2 data-en="Install from a local copy" data-id="Instal dari salinan lokal">Install from a local copy</h2>
+  <p data-en="Run in your target project. Replace the path with the actual location of this repository. Node.js 22.20+ required." data-id="Jalankan di proyek tujuan. Ganti path dengan lokasi repositori yang sebenarnya. Memerlukan Node.js 22.20+.">Run in your target project. Replace the path with the actual location of this repository. Node.js 22.20+ required.</p>
+  <pre><code id="command">npx skills add "PATH_TO/export-import-agent-skills"</code></pre>
+  <button id="copy" type="button" data-en="Copy command" data-id="Salin perintah">Copy command</button>
+  <p id="status" role="status"></p>
+  <p data-en="The GitHub repository is private. Authorized users with Git credentials can install it using the command below." data-id="Repositori GitHub bersifat private. Pengguna yang berizin dan memiliki kredensial Git dapat memasang dengan perintah berikut.">The GitHub repository is private. Authorized users with Git credentials can install it using the command below.</p>
+  <pre><code>npx skills add https://github.com/lensetek-int/export-import-agent-skills</code></pre>
+  <h2 data-en="Start learning" data-id="Mulai belajar">Start learning</h2>
+  <p data-en="1. Install and select your supported agent. 2. Ask it to use trade-orientation for your first export scenario. 3. Save your reflection and ask portfolio-coach to review it." data-id="1. Instal dan pilih agent yang didukung. 2. Minta trade-orientation membantu skenario ekspor pertama. 3. Simpan refleksi dan minta portfolio-coach meninjaunya.">1. Install and select your supported agent. 2. Ask it to use trade-orientation for your first export scenario. 3. Save your reflection and ask portfolio-coach to review it.</p>
+  <small data-en="Review instructions and permissions. Never share credentials. AI results require verification." data-id="Tinjau instruksi dan izin. Jangan bagikan kredensial. Hasil AI harus diverifikasi.">Review instructions and permissions. Never share credentials. AI results require verification.</small>
+</main><script>
+let language='en';
+document.getElementById('lang').addEventListener('click',()=>{language=language==='en'?'id':'en';document.documentElement.lang=language;document.querySelectorAll('[data-en]').forEach(el=>el.textContent=el.dataset[language]);document.getElementById('lang').textContent=language==='en'?'Bahasa Indonesia':'English';document.getElementById('status').textContent='';});
+document.getElementById('copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(document.getElementById('command').textContent);document.getElementById('status').textContent=language==='en'?'Copied. Replace the placeholder path.':'Disalin. Ganti placeholder path.'}catch{document.getElementById('status').textContent=language==='en'?'Copy manually from the box.':'Salin secara manual dari kotak.'}});
+</script></body></html>
