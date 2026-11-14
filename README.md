@@ -24,15 +24,13 @@ Select skills and an available agent when prompted. Default installation is proj
 
 Pilih skill dan agent yang tersedia. Secara default instalasi berlaku untuk proyek; `-g` untuk instalasi global. Tinjau sumber sebelum instalasi; `npx` mengunduh dan menjalankan CLI.
 
-### Private GitHub repository / Repositori GitHub private
+### Public GitHub repository / Repositori GitHub publik
 
-The repository is private. GitHub access and configured Git authentication are required. / Repositori bersifat private. Akses GitHub dan autentikasi Git diperlukan.
+Install from the public GitHub repository / Instal dari repositori GitHub publik:
 
 ```bash
 npx skills add https://github.com/lensetek-int/export-import-agent-skills
 ```
-
-Private repository installation depends on the user's Git credentials and CLI support. / Instalasi repositori private bergantung pada kredensial Git dan dukungan CLI pengguna.
 
 ## Compatibility / Kompatibilitas
 
