@@ -10,27 +10,21 @@ Reusable educational skills for AI agents / Skill pembelajaran reusable untuk AI
 | `trade-research` | Evidence-based market research planning | Perencanaan riset pasar berbasis bukti |
 | `portfolio-coach` | Organizing work and rubric-based feedback | Penataan karya dan umpan balik berbasis rubrik |
 
-## Install locally / Instalasi lokal
+## Installation / Instalasi
 
-Requires Node.js 22.20+ and npm. Run from the **project where you want the skills installed**, replacing the path with the actual absolute path to this folder:
+Portal & documentation: https://lensetek-int.github.io/export-import-agent-skills/
 
-Memerlukan Node.js 22.20+ dan npm. Jalankan dari **proyek tujuan instalasi**, ganti path dengan lokasi absolut folder ini:
+Requires Node.js 22.20+ and npm. Run from the **project where you want the skills installed**:
+
+Memerlukan Node.js 22.20+ dan npm. Jalankan dari **proyek tujuan instalasi**:
 
 ```bash
-npx skills add "PATH_TO/export-import-agent-skills"
+npx skills add https://github.com/lensetek-int/export-import-agent-skills
 ```
 
 Select skills and an available agent when prompted. Default installation is project-local; `-g` selects global installation. Review the source before installing; running `npx` downloads and executes the CLI.
 
 Pilih skill dan agent yang tersedia. Secara default instalasi berlaku untuk proyek; `-g` untuk instalasi global. Tinjau sumber sebelum instalasi; `npx` mengunduh dan menjalankan CLI.
-
-### Public GitHub repository / Repositori GitHub publik
-
-Install from the public GitHub repository / Instal dari repositori GitHub publik:
-
-```bash
-npx skills add https://github.com/lensetek-int/export-import-agent-skills
-```
 
 ## Compatibility / Kompatibilitas
 
